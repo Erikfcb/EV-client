@@ -1,0 +1,30 @@
+.tabContent {
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  font-family: "K2D", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_wrap {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.1em;
+  width: 40%;
+  padding: 0 2.5%;
+}
+
+.tab_title {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.tab_img {
+  margin-top: 30px;
+  width: 50%;
+  height: 20%;
+  padding: 0 2.5%;
+}
+
