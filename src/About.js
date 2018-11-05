@@ -37,7 +37,7 @@ class About extends Component {
             can best make use of the space available on the smallest to largest
             devices.
           </div>
-          <div className="resume" data-aos="fade-up" data-aos-delay="1200">
+          <div className="resume" data-aos="fade-up" data-aos-delay="900">
             <a href="../assets/ResumePDF.pdf" download>
               Download resume
             </a>

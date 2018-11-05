@@ -45,6 +45,8 @@
   margin: 0 20px;
   opacity: 0.7;
   height: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .logo:hover {
@@ -118,5 +120,14 @@ div > i {
   .logo {
     margin-left: 5vw;
     font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .link {
+    margin: 0 8px;
+  }
+  .logo {
+    font-size: 1.4em;
   }
 }

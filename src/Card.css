@@ -6,7 +6,7 @@
   align-items: center;
   font-family: "K2D", sans-serif;
   background-color: black;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);    
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
 .card_bg_image {
@@ -23,51 +23,104 @@
   width: 95%;
   padding-left: 5%;
   color: rgb(242, 255, 247);
-  font-size: 1.4em;
+  font-size: 2.2em;
   margin-top: 5%;
   margin-bottom: 5%;
   z-index: 4;
 }
 
 .icon {
-  font-size: 7em !important;
+  font-size: 9em !important;
   color: rgb(242, 255, 247);
-  margin-top: 40%;
   z-index: 5;
   transition: 0.3s;
 }
 
 .card:hover > .icon {
-  margin-top: 70%;
+  margin-top: 30%;
+  opacity: 0.5;
 }
+
 .card:hover > .card_subtitle {
   animation: 0.5s appear forwards;
 }
 
 .card_subtitle {
   color: rgb(242, 255, 247);
-  font-size: 1em;
+  font-size: 1.3em;
   height: 0;
   width: 95%;
   padding-left: 5%;
   opacity: 0;
 }
 
-@keyframes appear{
+@keyframes appear {
   100% {
     opacity: 1;
   }
 }
 
+@media only screen and (max-width: 1700px) {
+  .icon {
+    font-size: 7em !important;
+  }
+  .card_title {
+    font-size: 1.25em;
+  }
+  .card:hover > .icon {
+    margin-top: 55%;
+  }
+  .card_subtitle {
+    font-size: 1em;
+  }
+}
+
 @media only screen and (max-width: 1250px) {
-.card_title {
-  font-size: 1.2em;
-}  
+  .card_title {
+    font-size: 1.2em;
+  }
   .card:hover > .icon {
     margin-top: 100%;
   }
   .icon {
-  margin-top: 50%;
-    
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    height: 700px;
+  }
+  .card_title {
+    font-size: 2.5em;
+  }
+  .card_subtitle {
+    font-size: 1.6em
+  }
+  .card:hover > .icon {
+    margin-top: 40%;
+  }
+  .icon {
+    margin-top: 20%;
+    font-size: 11em !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card {
+    height: 400px;
+  }
+  .card_title {
+    font-size: 1.5em;
+  }
+  .card_subtitle {
+    font-size: 1em
+  }
+  .card:hover > .icon {
+    margin-top: 60%;
+  }
+  .icon {
+    margin-top: 30%;
+    font-size: 8em !important;
   }
 }

@@ -24,11 +24,11 @@
 
 .underline {
   height: 2px;
-  background-color:rgb(233, 255, 241);
+  background-color: rgb(233, 255, 241);
   width: 0;
 }
 
-.learn:hover > .underline{
+.learn:hover > .underline {
   animation: underline 0.5s ease forwards;
 }
 
@@ -62,5 +62,13 @@
   }
   .learn {
     font-size: 1.1em;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .slogen {
+    font-size: 1.1em;
+  }
+  .learn {
+    font-size: 1em;
   }
 }
